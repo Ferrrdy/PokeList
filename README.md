@@ -1,12 +1,40 @@
-# React + Vite
+📌 PokeList
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PokeList adalah aplikasi berbasis **React.js** yang menampilkan daftar Pokémon generasi pertama menggunakan data dari [PokeAPI](https://pokeapi.co/).  
+Aplikasi ini menyediakan fitur **pencarian**, **filter berdasarkan tipe Pokémon**, serta halaman **daftar item Pokémon** dengan animasi interaktif.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ **Frontend:** [React.js](https://react.dev/) + [Vite](https://vitejs.dev/)  
+- 🎨 **UI & Styling:** [Tailwind CSS](https://tailwindcss.com/)  
+- 🛠 **Routing:** [React Router](https://reactrouter.com/)  
+- 🎞 **Animations:** [Framer Motion](https://www.framer.com/motion/)  
+- 🖼 **Icons:** [Lucide React](https://lucide.dev/)  
+- 🌐 **HTTP Client:** [Axios](https://axios-http.com/)  
+- 🔗 **API Source:** [PokeAPI](https://pokeapi.co/)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+⚙️ Cara Menjalankan Proyek
+
+1️⃣ Clone repository
+```bash
+git clone https://github.com/username/pokelist.git
+cd pokelist
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Jalankan aplikasi
+npm run dev
+
+📂 Struktur Folder
+src/
+│── components/       # UI Components (Card, Spinner, dll)
+│── pages/            # Halaman utama (Home, Pokemon, Items)
+│── services/         # API service
+│── data/             # Data statis (items Pokémon)
+│── App.jsx           # Root aplikasi
+│── main.jsx          # Entry point aplikasi
