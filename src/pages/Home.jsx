@@ -122,10 +122,6 @@ const Home = () => {
           <h2 className="text-5xl font-extrabold text-purple-700">40+</h2>
           <p className="text-xl font-semibold text-black">Item Koleksi</p>
         </motion.div>
-        <motion.div whileHover={{ scale: 1.1 }}>
-          <h2 className="text-5xl font-extrabold text-purple-700">80+</h2>
-          <p className="text-xl font-semibold text-black">Lokasi Pokémon</p>
-        </motion.div>
       </motion.div>
     </div>
   );

@@ -67,7 +67,7 @@ const Pokemon = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tighter">
+        <h1 className="text-5xl md:text-5xl font-extrabold text-gray-900 tracking-tighter">
           Pokedex Direktori
         </h1>
         <p className="mt-3 max-w-2xl text-lg text-gray-500">

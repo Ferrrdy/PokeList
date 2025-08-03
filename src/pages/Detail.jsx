@@ -90,7 +90,7 @@ const Detail = () => {
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
                         <Link 
-                            to="/" 
+                            to="/pokemon" 
                             className="absolute top-6 left-6 inline-flex items-center gap-2 text-white font-bold hover:underline opacity-80 hover:opacity-100 transition-opacity"
                         >
                             <ArrowLeft size={20} />
