@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import { motion } from 'framer-motion';
 
-// Peta warna yang sama dengan halaman detail untuk konsistensi
 const typeColors = {
     normal: '#A8A77A', fire: '#EE8130', water: '#6390F0', electric: '#F7D02C',
     grass: '#7AC74C', ice: '#96D9D6', fighting: '#C22E28', poison: '#A33EA1',
@@ -12,9 +11,8 @@ const typeColors = {
 };
 
 const Card = ({ pokemon }) => {
-    // Pastikan pokemon dan sprites ada sebelum diakses
     if (!pokemon || !pokemon.sprites) {
-        return null; // Atau tampilkan kartu skeleton loading
+        return null;
     }
   
     const imageUrl = pokemon.sprites.other['official-artwork'].front_default;

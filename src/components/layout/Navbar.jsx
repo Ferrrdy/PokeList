@@ -46,12 +46,11 @@ const Navbar = () => {
         <Link 
           to="/" 
           className="text-2xl font-bold text-gray-800 tracking-wide transition-transform duration-300 hover:scale-105 z-20"
-          onClick={() => setIsMobileMenuOpen(false)} // Tutup menu saat klik logo
+          onClick={() => setIsMobileMenuOpen(false)}
         >
           PokéList
         </Link>
 
-        {/* Daftar Link Navigasi untuk Desktop */}
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <NavLink
@@ -70,7 +69,6 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Tombol Hamburger Menu untuk Mobile */}
         <div className="md:hidden z-20">
           <button onClick={toggleMobileMenu} className="p-2 rounded-md text-gray-700 hover:bg-gray-100">
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -92,7 +90,7 @@ const Navbar = () => {
                   <motion.div key={link.label} variants={mobileLinkVariants}>
                     <NavLink
                       to={link.href}
-                      onClick={toggleMobileMenu} // Tutup menu saat link diklik
+                      onClick={toggleMobileMenu}
                       className={({ isActive }) =>
                         `text-2xl font-semibold ${isActive ? 'text-blue-600' : 'text-gray-700'}`
                       }
